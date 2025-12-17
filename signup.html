@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* signup page */
+body{
+    margin: 0;
+}
+.signup-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(to bottom,black,rgb(46, 46, 46),black);
+}
+.signup-form{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 30px;
+    width: 400px;
+    height: 350px;
+    background-color: rgb(23, 22, 22);
+    box-shadow: white 0px 0px 10px 0px;
+    border-radius: 8px;
+    color: white;
+}
+h1{
+    text-align: center;
+}
+.input-group{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+
+}
+label{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: bold;
+}
+input{
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+.links{
+    display: flex;
+    justify-content: space-between;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+button{
+    background-color: #f1f3f7;
+    color:black;
+    border: none;
+    border-radius: 30px;
+    padding: 10px 15px;
+    font-weight: bold;
+}
+button:hover{
+    background: linear-gradient(to right,lightgreen,rgb(19, 147, 179)); 
+    cursor: pointer;
+    color: white;
+} 
+    </style>
+</head>
+<body>
+    <div class="signup-container" >
+        <form action="" class="signup-form">
+            <h1>Sign Up</h1>
+            <div class="input-group">
+                <label for="username">Username</label>
+                <input type="text" name="username" id="username" placeholder="Enter username">
+            </div>
+            <div class="input-group">
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email" placeholder="Enter email">
+            </div>
+            <div class="input-group">
+                <label for="password">Password</label>
+                <input type="password" name="password" id="password" placeholder="Enter password">
+            </div>
+            <div class="links">
+                <a href="login.html">Already have an account? Login</a>
+                <button type="submit">Sign Up</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
